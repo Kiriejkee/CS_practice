@@ -1,6 +1,4 @@
-﻿using System;
-
-Console.Write("Ввдите первое число: ");
+﻿Console.Write("Ввдите первое число: ");
 
 int firstValue = Convert.ToInt32(Console.ReadLine()); //camelCase => firstValue, secondValue, firstNumberOfArray
 
