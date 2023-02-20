@@ -7,6 +7,7 @@
 // ДОП: цифра третья может быть как с левой стороны, так и с правой
 
 
+
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
@@ -26,10 +27,15 @@ else
     double resultLeft = (num % Math.Pow(10, len - 2)) / Math.Pow(10, len - 3); // Нахождение цифры 1234567 -> 234567 -> 34567 -> 3
     resultLeft = resultLeft - (resultLeft % 1); // убираем все что после ","
     
-    double resultRight = (num % Math.Pow(10, 3)) / Math.Pow(10, 2);
+    double resultRight = (num % Math.Pow(10, 3)) / Math.Pow(10, 2); // можно таким образом int number = 123456; Console.WriteLine(number / 100 % 10); 
     resultRight = resultRight - (resultRight % 1);
     Console.WriteLine($" Третья слева цифра {resultLeft}, а третья справа цифра {resultRight}");
 }
+
+
+
+
+// int number = 123456; Console.WriteLine(number / 100 % 10); 
 
 
 
