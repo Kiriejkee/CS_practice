@@ -12,20 +12,16 @@ int NumSum(string num)
     int numSum = 0;
     if (num[0] != '-')
     {
-        int numSumIncrement = 0;
-        while (numSumIncrement < num.Length)
+        for (int numSumIncrement = 0; numSumIncrement < num.Length; numSumIncrement++)
         {
             numSum = numSum + (num[numSumIncrement] - '0');
-            numSumIncrement++;
         }
     }
     else
     {
-        int numSumIncrement = 1;
-        while (numSumIncrement < num.Length)
+        for (int numSumIncrement = 1; numSumIncrement < num.Length; numSumIncrement++)
         {
             numSum = numSum + (num[numSumIncrement] - '0');
-            numSumIncrement++;
         }    
     }
     return numSum;
