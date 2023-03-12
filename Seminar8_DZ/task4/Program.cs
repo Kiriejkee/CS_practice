@@ -8,7 +8,7 @@
 
 
 
-int NotEqualElement(int[,,] array, int min, int max)
+int GetNotEqualElement(int[,,] array, int min, int max)
 {
     int rows = array.GetLength(0);
     int cols = array.GetLength(1);
@@ -20,7 +20,7 @@ int NotEqualElement(int[,,] array, int min, int max)
         {
             for (int j = 0; j < cols; j++)
             {
-                if (num == array[i, j, k]) NotEqualElement(array, min, max);
+                if (num == array[i, j, k]) num = GetNotEqualElement(array, min, max);
                 
             }
 
